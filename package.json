@@ -1,0 +1,17 @@
+{
+  "name": "chanucli",
+  "version": "1.0.0",
+  "description": "This is an CLI-resume, made by chanu. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oizys18",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.3",
+    "shelljs": "^0.8.3"
+  }
+}
