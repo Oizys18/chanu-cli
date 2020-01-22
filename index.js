@@ -10,22 +10,23 @@ const init = () => {
 	console.log(
 		chalk.greenBright(
 			figlet.textSync("Chanu", {
-				font: "Ghost",
+				font: "roman",
 				horizontalLayout: "default",
 				verticalLayout: "default"
 			})
-		)
+		) +"\n"
 	);
 	console.log(
-		chalk.whiteBright(
-			figlet.textSync("CLI", {
-				font: "Ghost",
+		chalk.redBright(
+			figlet.textSync("  ~  CLI  ~", {
+				font: "rozzo",
 				horizontalLayout: "default",
 				verticalLayout: "default"
 			})
-		)
+		)+"\n"
 	);
 	console.log(chalk.red(' Welcome HPHK! This is Chanu CLI.'))
+	console.log(chalk.grey(' (If the text is not colored, try running on CMD.)'))
 	console.log(chalk.whiteBright(` Type 'help' for a list of commands.`))
 }
 
@@ -75,9 +76,15 @@ const run = async () => {
 			console.log(picked_answer)
 			const { PICK } = picked_answer
 			if (PICK === 'Basic_Information') {
-				console.log("Hello! It's good to see you here!\n" +
-					"Thanks a lot for downloading this package.\n " +
-					"It means a lot to me.")
+				console.log(chalk.green(" Name") + ": Yang ChanWoo\n" +
+							chalk.green(" Sex") + ": Male\n" +
+							chalk.green(" Age") + ": 28\n" +
+							chalk.green(" Hobby") + ": Movie, Cooking, Baking, Gaming, BJJ\n" +
+							chalk.green(" Animal") + ": 1 cat 2 dogs\n" +
+							chalk.green(" Personality") + ": Optimist\n" +
+							chalk.green(" Specialty") + ": 1. Bakes amazing Apple pie & chocolate chip cookies.\n" +
+							"            2. Loved by animals.\n" +
+							"            3. Comes up with endless creative ideas.")
 			}
 			else if (PICK === 'Notion_Resume') {
 				await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
@@ -110,6 +117,19 @@ const run = async () => {
 		}
 		else if (TYPE === 'notion') {
 			await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
+		}
+		else if (TYPE === 'hphk' || TYPE === 'HPHK') {
+			console.log(
+				chalk.cyanBright(
+					figlet.textSync("HPHK", {
+						font: "alligator",
+						horizontalLayout: "default",
+						verticalLayout: "default"
+					})
+				)
+			);
+			console.log(chalk.red(" Good Company,") + chalk.yellow(" Good Teachers,") + chalk.green(" Good People"))
+			console.log(chalk.grey(" I knew you would try that one."))
 		}
 		else if (TYPE === 'bye') {
 			console.log(" Good bye! See you soon. :) ")

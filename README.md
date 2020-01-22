@@ -1,11 +1,11 @@
 # Chanu-CLI
-![](https://img.shields.io/badge/version-1.1.1-orange.svg) ![](https://img.shields.io/badge/created__at-19.01.18-red.svg) ![](https://img.shields.io/badge/updated__at-19.01.22-red.svg)
+![](https://img.shields.io/badge/version-2.0.0-orange.svg) ![](https://img.shields.io/badge/created__at-19.01.18-red.svg) ![](https://img.shields.io/badge/updated__at-19.01.22-red.svg)
 
 ## Quick start
 - CMD recommended
 
 #### Installation
-- `npm install -g chanucli`
+- `npm install chanucli`
 
 #### Start
 - `chanu-cli`
