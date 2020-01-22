@@ -1,13 +1,13 @@
 {
   "name": "chanucli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "node.js based CLI resume.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "bin": {
-    "chanu-cli": "./index.js"
+    "chanucli": "./index.js"
   },
   "author": "Yang Chanwoo <oizys18@gmail.com>",
   "license": "MIT",

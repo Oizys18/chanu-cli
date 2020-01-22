@@ -5,13 +5,15 @@
 - CMD recommended
 
 #### Installation
+- `mkdir chanucli`
+- `cd chanucli`
 - `npm install chanucli`
 
 #### Start
-- `chanu-cli`
+- `chanucli`
 
 ## Documentation
-- `chanu-cli`: chanu-cli 실행 
+- `chanucli`: chanu-cli 실행 
 - commands :
     - `help`: 명령어 모음 
     - `info`: 간단한 신상명세 
@@ -19,6 +21,7 @@
     - `notion`: Notion Resume 페이지 링크
     - `hello`: 개발자의 인사 
     - `bye`: chanu-cli 종료
+    - `????`: 비-밀
 
 # 개발 기록 
 ## 목표
