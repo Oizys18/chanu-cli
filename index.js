@@ -64,8 +64,8 @@ const run = async () => {
 		if (TYPE === 'help') {
 			console.log(">" + chalk.greenBright(" help") + ": Show a list of commands.\n" +
 				">" + chalk.greenBright(" info") + ": Basic information about me.\n" +
-				">" + chalk.greenBright(" notion") + ": Opens notion resume page on browser.\n" +
 				">" + chalk.greenBright(" choice") + ": Instead of typing command, show multiple choices.\n" +
+				">" + chalk.greenBright(" notion") + ": Opens notion resume page on browser.\n" +
 				">" + chalk.greenBright(" hello") + ": Send greetings to the developer.(Why not?)\n" +
 				">" + chalk.greenBright(" bye") + ": Exit the program.")
 		}
@@ -103,13 +103,13 @@ const run = async () => {
 				"            2. Loved by animals.\n" +
 				"            3. Comes up with endless creative ideas.")
 		}
-		else if (TYPE === 'notion') {
-			await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
-		}
 		else if (TYPE === 'hello') {
 			console.log(chalk.cyanBright(" Hello! It's good to see you here!\n" +
 				" Thanks a lot for downloading this package.\n" +
 				" It means a lot to me."))
+		}
+		else if (TYPE === 'notion') {
+			await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
 		}
 		else if (TYPE === 'bye') {
 			console.log(" Good bye! See you soon. :) ")

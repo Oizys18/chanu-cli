@@ -4,10 +4,17 @@
 - made in 2020.01.18
 - CLI resume 
 
+## Quick start
+
+#### Installation
+- `npm install -g chanucli`
+
+#### Start
+- `chanu-cli`
+
 ## 목표
 - `npm`과 node.js를 이용한 CLI를 통해 색다른 Developer Resume 제작
 - `npm`에 대한 이해와 package publish 경험 쌓기
-
 
 
 ## 구현 내용
