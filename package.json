@@ -4,9 +4,8 @@
   "description": "node.js based CLI resume.",
   "main": "index.js",
   "scripts": {
-    "start": "index.js",
-    "preinstall": "Thanks for downloading my package!",
-    "postinstall": "Installation completed! type 'npm start' to start."
+    "start": "node index.js",
+    "install": "node index.js"
   },
   "author": {
     "name": "Yang Chanwoo",
@@ -21,6 +20,7 @@
     "chalk": "^3.0.0",
     "figlet": "^1.2.4",
     "inquirer": "^7.0.3",
+    "open": "^7.0.0",
     "shelljs": "^0.8.3"
   }
 }

@@ -4,11 +4,11 @@ const inquirer = require("inquirer");
 const chalk = require("chalk");
 const figlet = require("figlet");
 const shell = require("shelljs");
-const open = require('open');
+const open = require("open");
 
 const init = () => {
 	console.log(
-		chalk.green(
+		chalk.greenBright(
 			figlet.textSync("Chanu", {
 				font: "Ghost",
 				horizontalLayout: "default",
@@ -17,7 +17,7 @@ const init = () => {
 		)
 	);
 	console.log(
-		chalk.blueBright(
+		chalk.whiteBright(
 			figlet.textSync("CLI", {
 				font: "Ghost",
 				horizontalLayout: "default",
@@ -25,9 +25,8 @@ const init = () => {
 			})
 		)
 	);
-
-	console.log(chalk.red('Welcome HPHK! This is Chanu CLI.'))
-	console.log(chalk.whiteBright(`Type 'help' for a list of commands.`))
+	console.log(chalk.red(' Welcome HPHK! This is Chanu CLI.'))
+	console.log(chalk.whiteBright(` Type 'help' for a list of commands.`))
 }
 
 const typeQuestions = () => {
@@ -71,7 +70,7 @@ const run = async () => {
 				">" + chalk.greenBright(" bye") + ": Exit the program.")
 		}
 		else if (TYPE === 'choice') {
-			console.log("Okay,then. Pick one!")
+			console.log(chalk.yellow(" Okay,then. Pick one!"))
 			const picked_answer = await askQuestions();
 			console.log(picked_answer)
 			const { PICK } = picked_answer
@@ -82,24 +81,27 @@ const run = async () => {
 			}
 			else if (PICK === 'Notion_Resume') {
 				await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
+				console.log("Opening notion resume page....")
 			}
 			else if (PICK === 'Github_Page') {
 				await open("https://github.com/Oizys18");
+				console.log("Opening Github page....")
 			}
 			else if (PICK === 'Playlist') {
 				await open("https://www.youtube.com/playlist?list=PLhtrNKyVEq0OC61zmSAeNErPxJeZJxZqm");
+				console.log("Opening Youtube Playlist...")
 			}
 		}
 		else if (TYPE === 'info') {
-			console.log(chalk.green("Name") + ": Yang ChanWoo\n" +
-				chalk.green("Sex") + ": Male\n" +
-				chalk.green("Age") + ": 28\n" +
-				chalk.green("Hobby") + ": Movie, Cooking, Baking, Gaming, BJJ\n" +
-				chalk.green("Animal") + ": 1 cat 2 dogs\n" +
-				chalk.green("Personality") + ": Optimist\n" +
-				chalk.green("Specialty") + ": 1. Bakes amazing Apple pie & chocolate chip cookies.\n" +
-				"           2. Loved by animals.\n" +
-				"           3. Comes up with endless creative ideas.")
+			console.log(chalk.green(" Name") + ": Yang ChanWoo\n" +
+				chalk.green(" Sex") + ": Male\n" +
+				chalk.green(" Age") + ": 28\n" +
+				chalk.green(" Hobby") + ": Movie, Cooking, Baking, Gaming, BJJ\n" +
+				chalk.green(" Animal") + ": 1 cat 2 dogs\n" +
+				chalk.green(" Personality") + ": Optimist\n" +
+				chalk.green(" Specialty") + ": 1. Bakes amazing Apple pie & chocolate chip cookies.\n" +
+				"            2. Loved by animals.\n" +
+				"            3. Comes up with endless creative ideas.")
 		}
 		else if (TYPE === 'notion') {
 			await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
@@ -116,6 +118,12 @@ const run = async () => {
 		else if (TYPE === '') {
 			console.log(" Type something PLZ!")
 			console.log(chalk.red(" If you are lost, type 'help'!"))
+		}
+		else {
+			console.log(' No command detected under that input.\n' +
+				' Please check typo.\n' +
+				chalk.red(' Type "help" for commands.'))
+
 		}
 		console.log()
 	}
