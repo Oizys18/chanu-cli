@@ -1,18 +1,26 @@
 {
-  "name": "chanu-cli",
+  "name": "chanucli",
   "version": "1.0.0",
-  "description": "This is an CLI-resume, made by chanu.",
+  "description": "node.js based CLI resume.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "index.js",
+    "preinstall": "Thanks for downloading my package!",
+    "postinstall": "Installation completed! type 'npm start' to start."
   },
-  "author": "Oizys18",
-  "license": "",
+  "author": {
+    "name": "Yang Chanwoo",
+    "email": "oizys18@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oizys18/chanu-cli"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "figlet": "^1.2.4",
     "inquirer": "^7.0.3",
-    "open": "^7.0.0",
     "shelljs": "^0.8.3"
   }
 }

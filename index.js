@@ -35,7 +35,7 @@ const typeQuestions = () => {
 		{
 			type: "input",
 			name: "TYPE",
-			message: ">",
+			message: chalk.red(">"),
 		}
 	];
 	return inquirer.prompt(questions);
@@ -47,7 +47,7 @@ const askQuestions = () => {
 			type: "list",
 			name: "PICK",
 			message: "Pick one!",
-			choices: ["1.Basic_Information", "2.Notion_Resume", "3.Github_Page", "4.Portfolio", "5.Playlist"],
+			choices: ["1.Basic_Information", "2.Notion_Resume", "3.Github_Page", "4.Playlist"],
 			filter: function (val) {
 				return val.split(".")[1];
 			}
@@ -63,14 +63,14 @@ const run = async () => {
 		const { TYPE } = typed_answer
 		console.log()
 		if (TYPE === 'help') {
-			console.log("> help : Show a list of commands.\n" +
-				"> info : Basic information about me. \n" +
-				"> notion : Opens notion resume page on browser.\n" +
-				"> choices : Instead of typing command, show multiple choices.\n" +
-				"> hello : Send greetings to the developer.(Why not?)\n" +
-				"> bye : Exit the program.")
+			console.log(">" + chalk.greenBright(" help") + ": Show a list of commands.\n" +
+				">" + chalk.greenBright(" info") + ": Basic information about me.\n" +
+				">" + chalk.greenBright(" notion") + ": Opens notion resume page on browser.\n" +
+				">" + chalk.greenBright(" choice") + ": Instead of typing command, show multiple choices.\n" +
+				">" + chalk.greenBright(" hello") + ": Send greetings to the developer.(Why not?)\n" +
+				">" + chalk.greenBright(" bye") + ": Exit the program.")
 		}
-		else if (TYPE === 'choices') {
+		else if (TYPE === 'choice') {
 			console.log("Okay,then. Pick one!")
 			const picked_answer = await askQuestions();
 			console.log(picked_answer)
@@ -86,24 +86,36 @@ const run = async () => {
 			else if (PICK === 'Github_Page') {
 				await open("https://github.com/Oizys18");
 			}
-			else if (PICK === 'Portfolio') {
-				console.log('please add portfolio link')
-			}
 			else if (PICK === 'Playlist') {
 				await open("https://www.youtube.com/playlist?list=PLhtrNKyVEq0OC61zmSAeNErPxJeZJxZqm");
 			}
 		}
+		else if (TYPE === 'info') {
+			console.log(chalk.green("Name") + ": Yang ChanWoo\n" +
+				chalk.green("Sex") + ": Male\n" +
+				chalk.green("Age") + ": 28\n" +
+				chalk.green("Hobby") + ": Movie, Cooking, Baking, Gaming, BJJ\n" +
+				chalk.green("Animal") + ": 1 cat 2 dogs\n" +
+				chalk.green("Personality") + ": Optimist\n" +
+				chalk.green("Specialty") + ": 1. Bakes amazing Apple pie & chocolate chip cookies.\n" +
+				"           2. Loved by animals.\n" +
+				"           3. Comes up with endless creative ideas.")
+		}
+		else if (TYPE === 'notion') {
+			await open("https://www.notion.so/devcatfall/d32421df0a9744fbb8aef2a43326a47f");
+		}
 		else if (TYPE === 'hello') {
-			console.log("Hello! It's good to see you here!\n" +
-				"Thanks a lot for downloading this package.\n " +
-				"It means a lot to me.")
+			console.log(chalk.cyanBright(" Hello! It's good to see you here!\n" +
+				" Thanks a lot for downloading this package.\n" +
+				" It means a lot to me."))
 		}
 		else if (TYPE === 'bye') {
-			console.log("Good bye! See you soon. :) ")
+			console.log(" Good bye! See you soon. :) ")
 			break
 		}
 		else if (TYPE === '') {
-			console.log("Type something PLZ!")
+			console.log(" Type something PLZ!")
+			console.log(chalk.red(" If you are lost, type 'help'!"))
 		}
 		console.log()
 	}
