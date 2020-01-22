@@ -5,15 +5,15 @@
 - CMD recommended
 
 #### Installation
-- `mkdir chanucli`
-- `cd chanucli`
-- `npm install chanucli`
+- `git clone`
+- `npm install`
+- `npm start`
 
 #### Start
-- `chanucli`
+- `npm start`
 
 ## Documentation
-- `chanucli`: chanu-cli 실행 
+- `npm start`: chanu-cli 실행 
 - commands :
     - `help`: 명령어 모음 
     - `info`: 간단한 신상명세 
