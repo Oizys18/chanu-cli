@@ -1,13 +1,14 @@
-# Chanu-CLI
-![](https://img.shields.io/badge/version-2.1.3-green.svg) ![](https://img.shields.io/badge/created__at-19.01.18-yellow.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-blue.svg)
+# Chanu-CLI✨
+![](https://img.shields.io/badge/version-2.1.4-green.svg) ![](https://img.shields.io/badge/created__at-19.01.18-yellow.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-blue.svg)
 
 
 ![](img/front.PNG)
 
 ## Command Line Interface💻 Resume📜 
 - Node.js와 NPM을 이용한 CLI형식 resume.
-  
-## Quick start
+- npm package: https://www.npmjs.com/package/chanucli
+
+## Quick start🦅
 - (CMD recommended)
 
 ### Installation
@@ -43,7 +44,7 @@
     - `bye`: chanu-cli 종료
     - `????`: 비-밀
 
-# 개발 기록 
+# 개발 기록🛠
 ## 목표
 - `npm`과 node.js를 이용한 CLI를 통해 색다른 Developer Resume 제작
 - `npm`에 대한 이해와 package publish 경험 쌓기
