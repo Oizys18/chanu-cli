@@ -1,5 +1,8 @@
 # Chanu-CLI
-![](https://img.shields.io/badge/version-2.1.2-orange.svg) ![](https://img.shields.io/badge/created__at-19.01.18-red.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-red.svg)
+![](https://img.shields.io/badge/version-2.1.3-green.svg) ![](https://img.shields.io/badge/created__at-19.01.18-yellow.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-blue.svg)
+
+
+![](img/front.PNG)
 
 ## Command Line Interface💻 Resume📜 
 - Node.js와 NPM을 이용한 CLI형식 resume.
