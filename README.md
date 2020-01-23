@@ -1,5 +1,5 @@
 # Chanu-CLI
-![](https://img.shields.io/badge/version-2.1.1-orange.svg) ![](https://img.shields.io/badge/created__at-19.01.18-red.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-red.svg)
+![](https://img.shields.io/badge/version-2.1.2-orange.svg) ![](https://img.shields.io/badge/created__at-19.01.18-red.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-red.svg)
 
 ## Command Line Interface💻 Resume📜 
 - Node.js와 NPM을 이용한 CLI형식 resume.
@@ -23,11 +23,13 @@
 #### 3. 로컬 설치 - 2 
 - `npm init -y`
 - `npm install chanucli`
-- `chanucli start`
+- `npx chanucli`
 
 ## Documentation
-- `npm start`: chanu-cli 실행 
-- `chanucli`: (전역 설치시) chanu-cli 실행
+- 실행
+    - 로컬 설치-1: `npm start` 
+    - 로컬 설치-2: `npx chanucli`
+    - 전역 설치시: `chanucli`
 
 - commands list:
     - `help`: 명령어 모음 
