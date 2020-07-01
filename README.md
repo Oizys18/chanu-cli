@@ -1,8 +1,9 @@
 # Chanu-CLI✨
-![](https://img.shields.io/badge/version-2.1.4-green.svg) ![](https://img.shields.io/badge/created__at-19.01.18-yellow.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-blue.svg)
-
+![](https://img.shields.io/badge/version-2.1.4-green.svg) ![](https://img.shields.io/badge/created__at-19.01.18-yellow.svg) ![](https://img.shields.io/badge/updated__at-19.01.23-blue.svg)  ![](https://img.shields.io/badge/total_downloads-+1100-blue.svg)
 
 ![](img/front.PNG)
+![](https://i.imgur.com/wz2yXVO.png)
+total package downloads : 1,198
 
 ## Command Line Interface💻 Resume📜 
 - Node.js와 NPM을 이용한 CLI형식 resume.
